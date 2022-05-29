@@ -1,0 +1,133 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf=8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="test2.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %">
+    <link rel="Hacker icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/838/838416.png">
+    <title>자기소개</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Grid.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="test2.html">HTML/CSS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="table.html">Timetable</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <h1>이은지의 홈페이지</h1>
+        <h2>이 곳은 저를 소개하는 페이지입니다</h2>
+    </header>
+
+        <nav>
+            <h2>소개 순서</h2>
+            <ol>
+                <li>일기장(form실습)</li>
+                <li>
+                    소속(링크 및 이미지 실습)
+                    <ul>
+                        <li>성공회대학교</li>
+                        <li>인문융합자율학부</li>
+                    </ul>
+                </li>
+                <li>이력(테이블 실습)</li>
+                <li>좋아하는 것(텍스트 태그 소개)</li>
+            </ol>
+        </nav>
+
+        <section>
+            <article>
+                <form action="전송받을 대상">
+                    아이디: <input type="text" name="myid">
+                    비밀번호: <input type="password" name="mypw">
+                </form>
+                <form action="일기장">
+                    <h2>일기장</h2>
+                    제목: <input type="text" name="diaryTitle">
+                    <select>
+                        <option value="goodDay"> 좋은날 </option>
+                        <option value="sosoDay"> 그저그런날 </option>
+                        <option value="sadDay"> 슬픈날 </option>
+                    </select>
+                    <br>
+                    <h3>내용: </h3>
+                    <textarea cols="30" rows="20"></textarea>
+                    <br>
+                    <input type="submit">
+                </form>
+            </article>
+            <article>
+                <h2>저의 소속입니다</h2>
+                <a href="department2.html">소속 확인하기</a>
+            </article>
+            <br>
+            <article>
+                <h2>저의 이력입니다</h2>
+                <table>
+                    <thead>
+                        <th>년도</th>
+                        <th>이력 내용</th>
+                    </thead>
+                    <tbody>
+                        <tr><!--첫번째 줄-->
+                            <td>2002년도</td>
+                            <td>8월 17일 탄생</td>
+                        </tr>
+                        <tr><!--두번째 줄-->
+                            <td>2022년도</td>
+                            <td>성공회대학교 멋쟁이사자처럼 10기 아기사자</td>
+                        </tr>
+                        <tr><!--세번째 줄-->
+                            <td>2022년도</td>
+                            <td>성공회대학교 중앙도서관 금요일 지킴이</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+
+            <br>
+            
+            <article>
+                <h2>좋아하는 것</h2>
+                <p>
+                    <b>피아노,</b>
+                    <b>떡볶이,</b>
+                    <b>산타기</b>
+                </p>
+                <blockquote>
+                    <q>사자자리 아기사자</q>
+                    <i>이은지, 멋쟁이사자처럼 10기 아기사자</i>
+                </blockquote>
+            </article>
+
+        </section>
+
+        <br>
+        <hr>
+
+        <footer>
+            Copyright&copy; 성공회대학교 멋쟁이사자처럼 10기
+        </footer>
+    </body>
+</html>
