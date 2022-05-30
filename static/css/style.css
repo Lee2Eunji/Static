@@ -2,6 +2,20 @@ h1 {
     color: palevioletred;
 }
 
-img {
+.img {
     width: 150px;
+}
+
+.btn {
+    background-color: pink;
+    color: purple;
+}
+
+.card {
+    background-color: plum;
+}
+
+.container-fluid {
+    background-color: palevioletred;
+    border: 1px solid;
 }

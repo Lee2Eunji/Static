@@ -1,5 +1,7 @@
 {% load static %}
 
+{% extends 'Grid.html' %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,16 +20,16 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                 <a class="nav-link active" aria-current="page" href="Grid.html">Gallery</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="test2.html">HTML/CSS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="table.html">Timetable</a>
-              </li>
-            </ul>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{% url 'Grid' %}">Gallery</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{% url 'test2' %}">HTML/CSS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{% url 'table' %}">Timetable</a>
+                  </li>
+                </ul>
             <form class="d-flex">
                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                <button class="btn btn-outline-success" type="submit">Search</button>
@@ -171,5 +173,16 @@
             <td></td>
         </tr>
     </table>
+
+    {% block content %}
+       <h1>2022년</h1>
+    {% endblock %}
+
+    <footer>
+        <p>어렵다</p>
+        {% block footer %}
+           <p>그러나 재미있다.</p>
+        {% endblock %}
+    </footer>    
 </body>
 </html>

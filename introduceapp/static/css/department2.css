@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'LeeSeoyun';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/LeeSeoyun.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    font-family: 'LeeSeoyun';
+}
+
+title{
+    background-image: url('https://www.google.com/imgres?imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F7%2F74%2F%25EB%25A9%258B%25EC%259F%2581%25EC%259D%25B4%25EC%2582%25AC%25EC%259E%2590%25EC%25B2%2598%25EB%259F%25BC_%25EB%25A1%259C%25EA%25B3%25A0.png&imgrefurl=https%3A%2F%2Fko.wikipedia.org%2Fwiki%2F%25EB%25A9%258B%25EC%259F%2581%25EC%259D%25B4%25EC%2582%25AC%25EC%259E%2590%25EC%25B2%2598%25EB%259F%25BC&tbnid=2ptN6qjrA649NM&vet=12ahUKEwjk2v34_6b3AhU0gMYKHfN6CFoQMygAegUIARCoAQ..i&docid=MRDX2BfjQOCwyM&w=932&h=807&q=%EB%A9%8B%EC%9F%81%EC%9D%B4%EC%82%AC%EC%9E%90%EC%B2%98%EB%9F%BC&ved=2ahUKEwjk2v34_6b3AhU0gMYKHfN6CFoQMygAegUIARCoAQ')
+}
