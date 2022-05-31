@@ -12,3 +12,6 @@ def table(request):
 
 def test2(request):
     return render(request, 'test2.html')
+
+def static(request):
+    return render(request, 'static.html')

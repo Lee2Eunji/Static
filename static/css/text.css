@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'HallymMjo-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2204@1.0/HallymMjo-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+.day {
+    text-align: center;
+}
+
+.container-fluid {
+    background-color: gray;
+    border: 1px solid;
+}
+
+body {
+    font-family: 'HallymMjo-Regular'
+}
+
+table {
+    border: 0.5px solid #444444;
+    border-collapse: collapse;
+}
+th, td {
+    border: 0.5px solid #444444;
+}
+td {
+    text-align: center;
+    font-size: 5px;
+    width: 100px;
+    height: 20px;
+}
+th {
+    font-weight: 350;
+    font-size: 13px;
+}

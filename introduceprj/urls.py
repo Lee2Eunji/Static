@@ -23,4 +23,5 @@ urlpatterns = [
     path('department2', introduceapp.views.department2, name='department2'),
     path('table', introduceapp.views.table, name='table'),
     path('test2', introduceapp.views.test2, name='test2'),
+    path('static', introduceapp.views.static, name='static'),
 ]
